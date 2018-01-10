@@ -1,0 +1,31 @@
+body {
+  position: relative;
+  font-family:'Open Sans', Arial, sans-serif;
+  font-size:14px;
+  font-weight:300;
+  line-height:1.6em;
+  color:#333;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+  .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+  }
