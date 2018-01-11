@@ -1785,6 +1785,9 @@ img {
             transition-duration: .5s; }
   .header__menu a:hover {
     background-color: #36CBD4; }
+  @media (min-width: 700px) {
+    .header__menu a {
+      padding: 23px 25px; } }
 
 .header__linck--active {
   background-color: #36CBD4;

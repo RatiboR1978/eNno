@@ -65,6 +65,11 @@
   a:hover {
     background-color: #36CBD4;
   }
+  @media (min-width: 700px) {
+    a {
+      padding: 23px 25px;
+    }
+  }
 }
 
 .header__linck--active {
