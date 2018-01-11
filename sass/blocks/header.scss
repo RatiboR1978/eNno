@@ -2,15 +2,51 @@
   background-color: $accent-color;
 }
 
+.header__wrap-mob {
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+.header__menu-mob {
+  display: none;
+}
+
+.header__list-mob {
+  margin: 0;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #36CBD4;
+    list-style-type: none;
+    text-align: center;
+  }
+  a {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 0;
+    transition-property: background-color;
+    transition-duration: .5s;
+  }
+  a:hover {
+    background-color: #36CBD4;
+  }
+}
+
 .header__wrap {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
-  color: #fff;
   font-size: 35px;
-  padding: 16px 0 21px;
+  padding: 16px 20px 21px;
+  color: #fff;
 }
 
 .header__menu {
@@ -34,4 +70,75 @@
 .header__linck--active {
   background-color: #36CBD4;
   cursor: default;
+}
+
+.menu_btn {
+  height: 26px;
+  width: 30px;
+  border-radius: 3px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.menu_btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+}
+
+.menu_btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+}
+
+.menu_line {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: .3s all;
+  margin-top: 11px;
+}
+
+.menu_btn_active .menu_line {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.menu_btn_active:after {
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+  left: 3px;
+}
+
+.menu_btn_active:before {
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  left: 3px;
+}
+
+.header__logo-mob {
+  font-size: 35px;
+  padding: 16px 20px 21px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #fff;
+  }
 }

@@ -12,9 +12,16 @@ a {
 }
 
 .container {
-  width: 970px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%;
+  @media (min-width: 700px) {
+    width: 680px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1000px) {
+    width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 img {

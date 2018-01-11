@@ -385,9 +385,16 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 970px;
-  margin: 0 auto;
-  padding: 0 15px; }
+  width: 100%; }
+  @media (min-width: 700px) {
+    .container {
+      width: 680px;
+      margin: 0 auto; } }
+  @media (min-width: 1000px) {
+    .container {
+      width: 970px;
+      margin: 0 auto;
+      padding: 0 15px; } }
 
 img {
   max-width: 100%;
@@ -1712,20 +1719,53 @@ img {
 .header {
   background-color: #109173; }
 
+@media (min-width: 700px) {
+  .header__wrap-mob {
+    display: none; } }
+
+.header__menu-mob {
+  display: none; }
+
+.header__list-mob {
+  margin: 0;
+  padding: 0; }
+  .header__list-mob li {
+    border-bottom: 1px solid #36CBD4;
+    list-style-type: none;
+    text-align: center; }
+  .header__list-mob a {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 0;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .5s;
+         -o-transition-duration: .5s;
+            transition-duration: .5s; }
+  .header__list-mob a:hover {
+    background-color: #36CBD4; }
+
 .header__wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: none; }
+  @media (min-width: 700px) {
+    .header__wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .header__logo {
-  color: #fff;
   font-size: 35px;
-  padding: 16px 0 21px; }
+  padding: 16px 20px 21px;
+  color: #fff; }
 
 .header__menu {
   text-transform: uppercase;
@@ -1749,6 +1789,94 @@ img {
 .header__linck--active {
   background-color: #36CBD4;
   cursor: default; }
+
+.menu_btn {
+  height: 26px;
+  width: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle; }
+  @media (min-width: 1200px) {
+    .menu_btn {
+      display: none; } }
+
+.menu_btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all; }
+
+.menu_btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all; }
+
+.menu_line {
+  height: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  margin-top: 11px; }
+
+.menu_btn_active .menu_line {
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.menu_btn_active:after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  left: 3px; }
+
+.menu_btn_active:before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  left: 3px; }
+
+.header__logo-mob {
+  font-size: 35px;
+  padding: 16px 20px 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .header__logo-mob a {
+    color: #fff; }
 
 .about {
   margin-left: 120px;
