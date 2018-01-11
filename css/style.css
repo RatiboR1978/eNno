@@ -4,7 +4,7 @@
  * 2. Correct the line height in all browsers.
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1787,7 +1787,7 @@ img {
     background-color: #36CBD4; }
   @media (min-width: 700px) {
     .header__menu a {
-      padding: 23px 25px; } }
+      padding: 25px 23px; } }
 
 .header__linck--active {
   background-color: #36CBD4;
