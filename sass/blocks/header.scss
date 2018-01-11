@@ -1,0 +1,37 @@
+.header {
+  background-color: $accent-color;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: #fff;
+  font-size: 35px;
+  padding: 16px 0 21px;
+}
+
+.header__menu {
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 25px 25px;
+    margin-left: -2px;
+    transition-property: background-color;
+    transition-duration: .5s;
+  }
+  a:hover {
+    background-color: #36CBD4;
+  }
+}
+
+.header__linck--active {
+  background-color: #36CBD4;
+  cursor: default;
+}
