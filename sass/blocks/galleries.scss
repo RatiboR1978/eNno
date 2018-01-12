@@ -8,9 +8,6 @@
   margin: 8px 1%;
   position: relative;
   /*overflow: hidden;*/
-  img {
-    height: 100%;
-  }
 }
 
 .galleries__box {
@@ -47,6 +44,11 @@
 }
 
 .galleries__item:hover .galleries__box-title{
-  bottom: -10px;
+  bottom: 0;
   opacity: 1;
+  left: -80px;
+  @media (min-width: 470px) {
+    bottom: -10px;
+    left: -140px;
+  }
 }

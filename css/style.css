@@ -407,7 +407,7 @@ h2 {
       padding: 0 15px; } }
 
 img {
-  height: auto; }
+  max-width: 100%; }
 
 .clearfix:after {
   content: "";
@@ -2163,8 +2163,6 @@ img {
   margin: 8px 1%;
   position: relative;
   /*overflow: hidden;*/ }
-  .galleries__item img {
-    height: 100%; }
 
 .galleries__box {
   width: 100%;
@@ -2203,5 +2201,10 @@ img {
       font-weight: 800; }
 
 .galleries__item:hover .galleries__box-title {
-  bottom: -10px;
-  opacity: 1; }
+  bottom: 0;
+  opacity: 1;
+  left: -80px; }
+  @media (min-width: 470px) {
+    .galleries__item:hover .galleries__box-title {
+      bottom: -10px;
+      left: -140px; } }
