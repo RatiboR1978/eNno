@@ -407,7 +407,6 @@ h2 {
       padding: 0 15px; } }
 
 img {
-  max-width: 100%;
   height: auto; }
 
 .clearfix:after {
@@ -424,6 +423,15 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.text {
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  color: #8a8d94;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px 40px 10px; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2070,15 +2078,6 @@ img {
 .theme {
   margin-bottom: 90px; }
 
-.theme__text {
-  width: 50%;
-  text-align: center;
-  margin-left: 25%;
-  color: #8a8d94;
-  font-size: 15px;
-  border-bottom: 1px solid #eee;
-  padding: 0 10px 40px 10px; }
-
 .theme__icon {
   color: #36CBD4; }
 
@@ -2147,70 +2146,62 @@ img {
   background-color: #36CBD4;
   color: white; }
 
-.page-content {
-  margin-top: 185px;
-  margin-bottom: 100px; }
-
-.page-content__wrapper {
+.galleries__wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-align-content: space-between;
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
-  width: 830px;
-  height: 3255px;
-  padding: 30px; }
-  .page-content__wrapper .page-content__block {
-    width: 400px;
-    margin: 0 0 30px 34px; }
-    .page-content__wrapper .page-content__block img {
-      width: 100%;
-      display: block; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.page-content__content {
-  display: block; }
-  .page-content__content h3 {
-    text-align: center;
-    font-family: rufina-bold-webfont, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 35px; }
-  .page-content__content p {
-    line-height: 26px;
-    color: #898989; }
-  .page-content__content time {
-    text-align: center;
-    margin: 0 auto; }
+.galleries__item {
+  margin: 8px 1%;
+  position: relative;
+  /*overflow: hidden;*/ }
+  .galleries__item img {
+    height: 100%; }
 
-.page-content__link,
-.page-content__time {
-  text-align: center; }
-
-.page-content__link {
-  margin-top: 27px;
-  font-family: quattrocento_sansitalic, Arial, sans-serif;
-  font-size: 12px;
-  position: relative; }
-  .page-content__link a {
-    color: #898989; }
-
-.page-content__link::before {
-  content: '';
+.galleries__box {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
   position: absolute;
-  width: 61px;
-  height: 2px;
-  background-color: #c4c4c4;
-  top: 18px;
-  left: 169px; }
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%); }
 
-.page-content__time {
-  margin-top: 40px;
-  font-size: 13px; }
-  .page-content__time span {
-    color: #898989; }
+.galleries__item:hover .galleries__box {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.galleries__box-title {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  -webkit-transition: opacity .2s, bottom .7s;
+  -o-transition: opacity .2s, bottom .7s;
+  transition: opacity .2s, bottom .7s;
+  bottom: -30px;
+  left: -140px;
+  opacity: 0;
+  margin: 0;
+  z-index: 1; }
+  .galleries__box-title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300; }
+    .galleries__box-title h2 span {
+      font-weight: 800; }
+
+.galleries__item:hover .galleries__box-title {
+  bottom: -10px;
+  opacity: 1; }

@@ -36,18 +36,27 @@ h2 {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
 
-  .clearfix:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-  .wrap {
-    display: flex;
-    justify-content: center;
-  }
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  color: #8a8d94;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  padding: 0 10px 40px 10px;
+}
