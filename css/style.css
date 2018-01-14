@@ -2253,7 +2253,11 @@ img {
 .theme__item {
   text-align: center;
   width: 300px;
-  min-width: 260px; }
+  min-width: 260px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0; }
   .theme__item h3 {
     color: #333;
     font-size: 18px;
@@ -2283,7 +2287,54 @@ img {
 
 .theme__btn:hover {
   background-color: #36CBD4;
-  color: white; }
+  color: white;
+  -webkit-animation-name: shake;
+          animation-name: shake; }
+
+@-webkit-keyframes progress {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  20% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  30% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes progress {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  20% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  30% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+.theme__item1 {
+  opacity: 1;
+  -webkit-animation: progress 1s;
+          animation: progress 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .galleries__wrap {
   display: -webkit-box;
