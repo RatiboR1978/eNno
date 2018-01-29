@@ -9,82 +9,159 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="header__wrap-mob">
-            <nav class="header__menu-mob">
-                <ul class="header__list-mob">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="services.html">services</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="portfolio.html">contact</a></li>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap-mob">
+                <nav class="header__menu-mob">
+                    <ul class="header__list-mob">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="portfolio.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__logo-mob">
+                    <a href="#">eNno</a>
+                    <div class="menu_btn">
+                        <div class="menu_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrap">
+                <a class="header__logo" href="#">eNno</a>
+                <nav class="header__menu">
+                    <a href="index.html">home</a>
+                    <a href="services.html">services</a>
+                    <a class="header__linck--active" href="blog.html">blog</a>
+                    <a href="portfolio.html">portfolio</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="blog">
+        <h2>Blog</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu
+            vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam</p>
+        <div class="blog__wrap">
+            <div class="blog__content">
+                <div class="blog__post">
+                    <article class="blog__item">
+                        <p class="blog__date">FEBRUARY,22 2015</p>
+                        <img src="img/phone.jpg" alt="phone">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <a href="#">Learn more</a>
+                    </article>
+                </div>
+                <ul class="blog__pager">
+                    <li class="blog__pager-current first"><span>«</span></li>
+                    <li class="blog__pager-item"><a href="#" title="На страницу номер 1">1</a></li>
+                    <li class="blog__pager-item"><a href="#" title="На страницу номер 2">2</a></li>
+                    <li class="blog__pager-item"><a href="#" title="На страницу номер 3">3</a></li>
+                    <li class="blog__pager-item"><a href="#" title="На страницу номер 4">4</a></li>
+                    <li class="blog__pager-item"><a href="#" title="На страницу номер 5">5</a></li>
+                    <li class="blog__pager-next last"><a href="#" title="На следующую страницу">»</a></li>
                 </ul>
-            </nav>
-            <div class="header__logo-mob">
-                <a href="#">eNno</a>
-                <div class="menu_btn">
-                    <div class="menu_line"></div>
+                <div class="blog__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HrdAkX0ue3k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <aside class="blog__popular">
+                <div class="blog__search">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <div class="blog__pop-post">
+                    <h2>Popular Posts</h2>
+                    <article class="blog__pop-item">
+                        <img src="img/b.jpg" alt="kelly">
+                        <h3>Kelly Hidayah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                        <a href="#">Read more</a>
+                    </article>
+                    <article class="blog__pop-item">
+                        <img src="img/a.jpg" alt="kelly">
+                        <h3>Kelly Hidayah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                        <a href="#">Read more</a>
+                    </article>
+                    <article class="blog__pop-item">
+                        <img src="img/c.jpg" alt="kelly">
+                        <h3>Kelly Hidayah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                        <a href="#">Read more</a>
+                    </article>
+                    <article class="blog__pop-item">
+                        <img src="img/d.jpg" alt="kelly">
+                        <h3>Kelly Hidayah</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+                        <a href="#">Read more</a>
+                    </article>
+                </div>
+                <div class="blog__pop-tags">
+                    <h4>Popular tags</h4>
+                    <ul class="blog__tags">
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Trends</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Internet</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">Development</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrap">
+                <div class="contacts__item">
+                    <a href="#"><h3 class="contacts__title-first">eNno</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam consectetur adipiscing elit Cras suscipit arcu libero</p>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Latest Posts</h3>
+                    <ul>
+                        <li><a href="#">This is awesome post title</a></li>
+                        <li><a href="#">Awesome features are awesome</a></li>
+                        <li><a href="#">Create your own awesome website</a></li>
+                        <li><a href="#">Wow, this is fourth post title</a></li>
+                    </ul>
+                </div>
+                <div class="contacts__item">
+                    <h3 class="contacts__title">Stay in touch</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-envelope black"></i>example@gmail.com</a></li>
+                        <li><a href="#"><i class="fa fa-phone black"></i>+345 578 59 45 416</a></li>
+                        <li><i class="fa fa-home black"></i>Enno inc | PO Box 23456 Little Lonsdale St, New York
+                            Victoria 8011 USA</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="header__wrap">
-            <a class="header__logo" href="#">eNno</a>
-            <nav class="header__menu">
-                <a href="index.html">home</a>
-                <a href="services.html">services</a>
-                <a class="header__linck--active" href="blog.html">blog</a>
-                <a href="portfolio.html">portfolio</a>
-                <a href="contact.html">contact</a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<section class="contacts">
-    <div class="container">
-        <div class="contacts__wrap">
-            <div class="contacts__item">
-                <a href="#"><h3 class="contacts__title-first">eNno</h3></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam consectetur adipiscing elit Cras suscipit arcu libero</p>
-            </div>
-            <div class="contacts__item">
-                <h3 class="contacts__title">Latest Posts</h3>
-                <ul>
-                    <li><a href="#">This is awesome post title</a></li>
-                    <li><a href="#">Awesome features are awesome</a></li>
-                    <li><a href="#">Create your own awesome website</a></li>
-                    <li><a href="#">Wow, this is fourth post title</a></li>
-                </ul>
-            </div>
-            <div class="contacts__item">
-                <h3 class="contacts__title">Stay in touch</h3>
-                <ul>
-                    <li><a href="#"><i class="fa fa-envelope black"></i>example@gmail.com</a></li>
-                    <li><a href="#"><i class="fa fa-phone black"></i>+345 578 59 45 416</a></li>
-                    <li><i class="fa fa-home black"></i>Enno inc | PO Box 23456 Little Lonsdale St, New York
-                        Victoria 8011 USA</li>
-                </ul>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__copyright"><p class="footer__text">© 2014 eNno Multi-purpose theme |</p><a href="#">Bootstraptaste</a></div>
+                <div>
+                    <ul class="footer__social">
+                        <li><a href="#"><i class="fa fa-facebook fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus fa-1x"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer__wrap">
-            <div class="footer__copyright"><p class="footer__text">© 2014 eNno Multi-purpose theme |</p><a href="#">Bootstraptaste</a></div>
-            <div>
-                <ul class="footer__social">
-                    <li><a href="#"><i class="fa fa-facebook fa-1x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter fa-1x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin fa-1x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest fa-1x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus fa-1x"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
