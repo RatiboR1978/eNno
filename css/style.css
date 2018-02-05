@@ -2548,3 +2548,93 @@ img {
   font-size: 14px;
   font-weight: bold;
   color: white; }
+
+.blog__pop-item {
+  padding-left: 15px;
+  padding-bottom: 30px; }
+
+.blog__pop-item img {
+  float: left;
+  margin-top: 15px; }
+
+.blog__pop-item-wrap {
+  float: right;
+  width: 254px;
+  margin-right: 28px;
+  margin-bottom: 50px; }
+  .blog__pop-item-wrap h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 30px; }
+  .blog__pop-item-wrap p {
+    padding-left: 15px; }
+
+.blog__pop-item-link {
+  text-align: right;
+  margin-top: 30px;
+  padding-left: 15px; }
+  .blog__pop-item-link a {
+    color: black; }
+  .blog__pop-item-link a:hover {
+    color: #36CBD4; }
+
+.blog__pop-tags h4 {
+  text-align: center;
+  color: #36CBD4;
+  margin-bottom: 30px;
+  font-size: 14px; }
+
+.blog__tags {
+  margin: 0;
+  padding: 0; }
+
+.blog__tags li {
+  margin: 0 5px 15px 0;
+  display: inline-block; }
+  .blog__tags li a {
+    background: #eee;
+    color: #333;
+    padding: 5px 10px; }
+  .blog__tags li a:hover {
+    color: #fff;
+    background-color: #36CBD4; }
+
+.blog__pager {
+  padding-left: 0;
+  margin: 40px 0;
+  display: block; }
+  .blog__pager li {
+    display: inline; }
+    .blog__pager li a {
+      margin-left: -1px;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      color: #337ab7;
+      background-color: #fff;
+      border: 1px solid #ddd; }
+    .blog__pager li a:hover {
+      color: #23527c;
+      background-color: #eee;
+      border-color: #ddd; }
+
+.blog__pager > li:first-child > a {
+  margin-left: 0;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px; }
+
+.blog__pager > li:last-child > a {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px; }
+
+.blog__video {
+  margin-top: 220px;
+  margin-bottom: 60px; }
+  .blog__video iframe {
+    width: 100%;
+    height: 421px; }
