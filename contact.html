@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap-mob">
+                <nav class="header__menu-mob">
+                    <ul class="header__list-mob">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="portfolio.html">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__logo-mob">
+                    <a href="#">eNno</a>
+                    <div class="menu_btn">
+                        <div class="menu_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrap">
+                <a class="header__logo" href="#">eNno</a>
+                <nav class="header__menu">
+                    <a class="header__linck--active" href="index.html">home</a>
+                    <a href="services.html">services</a>
+                    <a href="blog.html">blog</a>
+                    <a href="portfolio.html">portfolio</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="map"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__copyright"><p class="footer__text">© 2014 eNno Multi-purpose theme |</p><a href="#">Bootstraptaste</a></div>
+                <div>
+                    <ul class="footer__social">
+                        <li><a href="#"><i class="fa fa-facebook fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest fa-1x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus fa-1x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDFJz0aFPwOYJOGygcFyem2GE5lwkIAD4&callback=initMap">
+    </script>
 </body>
 </html>

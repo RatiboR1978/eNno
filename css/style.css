@@ -2137,82 +2137,11 @@ img {
     .slider-items {
       margin-right: 0; } }
 
-.contacts {
-  position: relative;
-  z-index: 10; }
-
-.contacts__wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media (min-width: 820px) {
-    .contacts__wrap {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-
-.contacts__item {
-  width: 90%;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center; }
-  .contacts__item ul {
-    padding-left: 0; }
-    @media (min-width: 820px) {
-      .contacts__item ul {
-        padding-left: 40px; } }
-  .contacts__item ul li {
-    list-style: none; }
-  .contacts__item ul li a {
-    font-size: 14px;
-    color: #8a8d94;
-    font-weight: 300;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    display: block; }
-  .contacts__item ul li a:hover {
-    color: #109173; }
-  @media (min-width: 820px) {
-    .contacts__item {
-      width: 30.3333%;
-      text-align: left; } }
-
-.contacts__title-first {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  color: #109173;
-  font-size: 2em;
-  font-weight: 500; }
-
-.contacts__title {
-  font-size: 20px;
-  color: #000;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 40px; }
-  @media (min-width: 820px) {
-    .contacts__title {
-      margin-left: 40px; } }
-
-.black {
-  color: black;
-  margin-right: 10px; }
+#map {
+  width: 100%;
+  height: 450px;
+  background-color: grey;
+  margin-top: -50px; }
 
 .theme {
   margin-bottom: 90px; }
@@ -2479,15 +2408,29 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px; }
+  padding-top: 70px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  @media (min-width: 1000px) {
+    .blog__wrap {
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
 
 .blog__content {
-  padding-right: 15px;
-  width: 66.666666%; }
+  width: 100%; }
+  @media (min-width: 1000px) {
+    .blog__content {
+      padding-right: 15px;
+      width: 66.666666%; } }
 
 .blog__popular {
-  padding-left: 15px;
-  width: 33.3333333%; }
+  width: 100%; }
+  @media (min-width: 1000px) {
+    .blog__popular {
+      width: 33.3333333%;
+      padding-left: 15px; } }
 
 .blog__date {
   margin: 0;
@@ -2521,7 +2464,7 @@ img {
   padding: 6px 0 6px 12px;
   margin-right: -12px;
   border: 1px solid #ccc;
-  width: 96%;
+  width: 95%;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
@@ -2529,6 +2472,9 @@ img {
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; }
+  @media (min-width: 1000px) {
+    .blog__search input {
+      width: 96%; } }
 
 .blog__search input:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -2559,7 +2505,6 @@ img {
 
 .blog__pop-item-wrap {
   float: right;
-  width: 254px;
   margin-right: 28px;
   margin-bottom: 50px; }
   .blog__pop-item-wrap h3 {
@@ -2569,6 +2514,9 @@ img {
     margin-bottom: 30px; }
   .blog__pop-item-wrap p {
     padding-left: 15px; }
+  @media (min-width: 1000px) {
+    .blog__pop-item-wrap {
+      width: 254px; } }
 
 .blog__pop-item-link {
   text-align: right;
