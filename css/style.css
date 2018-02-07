@@ -2137,11 +2137,82 @@ img {
     .slider-items {
       margin-right: 0; } }
 
-#map {
-  width: 100%;
-  height: 450px;
-  background-color: grey;
-  margin-top: -50px; }
+.contacts {
+  position: relative;
+  z-index: 10; }
+
+.contacts__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 820px) {
+    .contacts__wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.contacts__item {
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center; }
+  .contacts__item ul {
+    padding-left: 0; }
+    @media (min-width: 820px) {
+      .contacts__item ul {
+        padding-left: 40px; } }
+  .contacts__item ul li {
+    list-style: none; }
+  .contacts__item ul li a {
+    font-size: 14px;
+    color: #8a8d94;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block; }
+  .contacts__item ul li a:hover {
+    color: #109173; }
+  @media (min-width: 820px) {
+    .contacts__item {
+      width: 30.3333%;
+      text-align: left; } }
+
+.contacts__title-first {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #109173;
+  font-size: 2em;
+  font-weight: 500; }
+
+.contacts__title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  @media (min-width: 820px) {
+    .contacts__title {
+      margin-left: 40px; } }
+
+.black {
+  color: black;
+  margin-right: 10px; }
 
 .theme {
   margin-bottom: 90px; }
@@ -2586,3 +2657,89 @@ img {
   .blog__video iframe {
     width: 100%;
     height: 421px; }
+
+#map {
+  width: 100%;
+  height: 450px;
+  background-color: grey;
+  margin-top: -50px;
+  margin-bottom: 70px; }
+
+.contact__text {
+  margin-top: 25px;
+  text-align: center;
+  padding-bottom: 35px; }
+
+.contact__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 1000px) {
+    .contact__wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.contact__group {
+  width: 82%;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1000px) {
+    .contact__group {
+      width: 41%; } }
+
+.contact__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px; }
+  .contact__item label {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px; }
+  .contact__item input {
+    padding: 7px 12px;
+    border: 1px solid #f2f2f2;
+    outline: none; }
+  .contact__item textarea {
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    outline: none;
+    resize: none; }
+
+.contact__but {
+  padding: 8px 20px;
+  background: #36CBD4;
+  color: #fff;
+  border: none;
+  width: 144px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  outline: none; }
